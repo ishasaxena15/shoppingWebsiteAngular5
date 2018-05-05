@@ -1,0 +1,100 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  text-align: center;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+    text-align: center;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
+.column[_ngcontent-c2]   img[_ngcontent-c2] {
+ /*margin-left: 0.8%; */
+}
+.height_50{
+  height:50px;
+}
+
+.headerIcon{width:35px;float: left;margin-top: 8px;}
+
+.headerTitle{
+  margin-left:5px;
+}
+.beige{
+  background-color:beige;
+}
+.homeImage {
+
+ 
+}
+.w100{
+  width:100%;
+}
+
+.w40{
+  width:40%;
+}
+.margin0{
+  margin:0px;
+}
+
+.marginT60{
+  margin-top: 60px;
+}
+
+
+.image250 {
+  width:250px;height: 250px;
+ }
+
+ .badge1 {
+   position:relative;
+}
+.badge1[data-badge]:after {
+   content:attr(data-badge);
+   position:absolute;
+   top:-10px;
+   right:-10px;
+   font-size:.7em;
+   background:green;
+   color:white;
+   width:18px;height:18px;
+   text-align:center;
+   line-height:18px;
+   border-radius:50%;
+   box-shadow:0 0 1px #333;
+
+}
+.floatBadge {
+      position: fixed;
+    margin-left: -14px;
+    background-color: #e66161;
+}

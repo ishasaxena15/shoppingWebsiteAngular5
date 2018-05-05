@@ -1,0 +1,15 @@
+.footer {
+	background: #EDEFF1;
+	height: auto;
+	padding-bottom: 30px;
+	position: relative;
+	width: 100%;
+	border-bottom: 1px solid #CCCCCC;
+	border-top: 1px solid #DDDDDD;
+}
+.footer p {
+	margin: 0;
+}
+.footerStyle{
+	background-color: #94969f;padding-top: 15px;	position:fixed; bottom:0;width:100%;
+}

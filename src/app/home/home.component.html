@@ -1,0 +1,39 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <img src="../../assets/images/shopping-bag-mouse-512.png" class="headerIcon">
+      <a class="navbar-brand" href="#" style="margin-left:5px;">ShopNow</a>
+    </div>
+    <div class="navbar-header navbar-right">
+      <img routerLink="/cart" class="headerIcon" src="../../assets/images/shopping-cart.svg">
+      <span *ngIf="productsInCartCount != 0" class="badge badge-light floatBadge">{{productsInCartCount}}</span>
+    </div>
+
+    <form class="navbar-form navbar-right w40" action="/action_page.php">
+      <div class="input-group w100">
+        <input type="text" class="form-control" placeholder="Search" [(ngModel)]="userFilter.name" name="search" >
+      </div>
+    </form>
+  </div>
+</nav>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50" class="marginT60">
+<div infiniteScroll
+        [infiniteScrollDistance]="1"
+        [infiniteScrollThrottle]="1000"
+        (scrolled)="onScroll(lastIndex)" class="row margin0" >
+
+  <div *ngFor="let product of productListToBeShown | filterBy: userFilter" style = "" class="column">
+    <div class="beige">
+      <img src={{product.image}} class="image250" (click)="goTo(product.id)">
+      <h4>{{product.name}}</h4>
+      <h4>$ {{product.price}}</h4>
+      <button *ngIf="!product.addedToCart" style="width:50%;color:white;background-color: grey;font-size: 16px;" (click)= "addToCart(product.id)">Add to Cart</button>
+      <button *ngIf="product.addedToCart" style="width:50%;color:white;background-color: grey;font-size: 16px;" (click)= "removeToCart(product.id)">Remove from Cart</button>
+    </div>
+  </div>
+  </div>
+  <div class="height_50">
+    
+  </div>
+</body>

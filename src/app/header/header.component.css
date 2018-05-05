@@ -1,0 +1,10 @@
+.headerIcon{width:35px;float: left;margin-top: 8px;}
+
+.headerTitle{
+	margin-left:5px;
+}
+.floatBadge {
+      position: fixed;
+    margin-left: -14px;
+    background-color: #e66161;
+}

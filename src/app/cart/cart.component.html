@@ -1,0 +1,28 @@
+<app-header></app-header>
+<div style="margin-top: 5%;margin-bottom: 10%;">
+	
+	<button (click)="emptyCart()" class="BackButton">Empty cart</button>	
+	<button (click)="back()" class="BackButton">Back to Listing</button>
+
+	<div *ngFor="let product of productsAddedToCart" style = "" class="column">
+		<div style="" class="detailOuterCard row auto">
+		  <div class="floatLeft marginRight5" >
+		    <img src={{product.image}} class="image350">
+		  </div>
+		  <div class="floatLeft width50">
+		    <h2 class="paddBottom10">
+				  {{product.name}}
+		      <h5>{{product.category}} | {{product.subCategory}}</h5>
+				</h2>
+		    <h4 class="paddBottom2">$ {{product.price}}.00</h4>
+		    <h4 class="paddBottom2">{{product.description}}</h4>
+		    <h4 class="paddBottom2">
+				  Rating - 
+				  {{product.rating}} / 5</h4>
+			<button  style="" (click)="removeToCart(product.id)" class="BackButton cartButton">Remove from Cart</button>
+		  </div>
+		</div>
+	</div>
+	<div class="height_50">
+	</div>
+</div>

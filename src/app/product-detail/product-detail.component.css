@@ -1,0 +1,40 @@
+.height_50{
+  height:50px;
+}
+
+.detailCard{
+	padding:10px;margin-top: 5% !important;margin-left:30%;width:40%;text-align: center;background-color: beige;border-radius: 5%;
+}
+
+.backButton{
+	
+	background-color: #3682f3; font-size:20px; border-radius: 6px;
+}
+
+.detailCardImage{
+	width:250px;height: 250px;margin-left:10%;
+}
+ .detailOuterCard{
+ 	padding:10px;margin-top: 5% !important;margin-left:15%;width:70%;text-align: justify;border-radius: 5%;
+ }
+ .floatLeft{
+ 	float: left;
+ }
+ .width50 {
+ 	width:50%;
+ }
+ .paddBottom2{
+ 	padding-bottom: 2%;
+ } 
+ .paddBottom10{
+ 	padding-bottom: 10%;
+ }
+
+ .BackButton{width:20%;margin-left:40%;background-color: #94969f; font-size:18px; border-radius: 6px;color:white;}
+
+.image350 {
+ 	width:350px;height: 350px;
+ }
+ .marginRight5{
+ 	margin-right: 5%;
+ }

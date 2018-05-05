@@ -1,0 +1,12 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <img src="../../assets/images/shopping-bag-mouse-512.png" class="headerIcon">
+      <a class="navbar-brand" href="#" style="margin-left:5px;">ShopNow</a>
+    </div>
+     <div class="navbar-header navbar-right">
+      <img routerLink="/cart" class="headerIcon" src="../../assets/images/shopping-cart.svg">
+      <span *ngIf="productsInCartCount != 0" class="badge badge-light floatBadge">{{productsInCartCount}}</span>
+    </div>
+</div>
+</nav>
